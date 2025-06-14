@@ -17,14 +17,14 @@ public class DayNightSoundsClient implements ClientModInitializer {
 						timeOfDay %= 24000;
 						if (timeOfDay == 500) {
 							if(MinecraftClient.getInstance().player != null)
-							 	MinecraftClient.getInstance().player.playSoundToPlayer(SoundEvents.BLOCK_BELL_USE, SoundCategory.HOSTILE, 1.0f, 0.5f);
+							 	MinecraftClient.getInstance().player.playSoundToPlayer(SoundEvents.BLOCK_BELL_USE, SoundCategory.HOSTILE, 1.0f, 1.0f);
 						// It's day
-							System.out.println("It's daytime!" + timeOfDay);
+							//System.out.println("It's daytime!" + timeOfDay);
 						} else if(timeOfDay == 12500){
 							if(MinecraftClient.getInstance().player != null)
-								MinecraftClient.getInstance().player.playSoundToPlayer(SoundEvents.ENTITY_WOLF_HOWL, SoundCategory.HOSTILE, 1.0f, 0.5f);
-							// It's night entity.wolf.howl
-							System.out.println("It's nighttime!" + timeOfDay);
+								MinecraftClient.getInstance().player.playSoundToPlayer(SoundEvents.ENTITY_VEX_CHARGE, SoundCategory.HOSTILE, 2.0f, 1.0f);
+							// It's night
+							//System.out.println("It's nighttime!" + timeOfDay);
 						}
 					}
 				});

@@ -3,13 +3,13 @@
 	"id": "daynight-sounds",
 	"version": "${version}",
 	"name": "Day/Night Sounds",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Plays a noise at 500 and 12500 game time",
 	"authors": [
-		"Me!"
+		"Tytries"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/TyTries",
+		"sources": "https://github.com/TyTries/DayNight-sounds"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/daynight-sounds/icon.png",
@@ -23,15 +23,10 @@
 		]
 	},
 	"mixins": [
-		"daynight-sounds.mixins.json",
-		{
-			"config": "daynight-sounds.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.4",
+		"minecraft": ">=1.21.0",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
